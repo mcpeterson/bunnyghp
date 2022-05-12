@@ -10,7 +10,7 @@ import { AppParams } from './types';
 
 // Add or remove commands here.
 export const getDefinitions = (params?: AppParams) => [
-  ...kibana(params?.github?.person), // TODO: remove this when fork is deployed.
+  // ...kibana(params?.github?.person), // TODO: remove this when fork is deployed.
   ...github.all(params?.github),
   ...google(),
   ...classic(),
