@@ -2,7 +2,7 @@
  * You can edit this file to add and remove sets of commands.
  */
 
-import { github, google, classic } from './commands';
+import { github, google, classic, vanta } from './commands';
 
 // Importing separately until fork is deployed.
 import { kibana } from './commands/kibana';
@@ -14,4 +14,5 @@ export const getDefinitions = (params?: AppParams) => [
   ...github.all(params?.github),
   ...google(),
   ...classic(),
+  ...vanta(),
 ];
